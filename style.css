@@ -1,0 +1,1071 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  align-self: stretch;
+  padding: 0rem;
+}
+/************ Generelt **************/
+body {
+  background: linear-gradient(#fff9f1 0%, #ffe7c7 100%);
+}
+h1 {
+  font-size: 1.5rem;
+}
+.knap {
+  background-color: #c4e6ff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 1.5rem;
+  padding: 7px;
+}
+.knap:hover {
+  background-color: #ffb000;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.knap a {
+  background-color: #c4e6ff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+}
+.knap a:hover {
+  background-color: #ffb000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 35px;
+  color: #fff9f1;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+.blålinje {
+  background-color: #c4e6ff;
+  width: 80%;
+  height: 20px;
+  margin-inline: auto;
+}
+/*****************FOOTER************************/
+footer {
+  background-color: #37111f;
+  color: #fff9f1;
+  display: grid;
+  height: 600px;
+}
+.logofooter {
+  display: flex;
+  height: 100%;
+  max-height: 150px;
+  min-height: 80px;
+  object-fit: contain;
+  padding-top: 20px;
+  width: 200px;
+  margin-inline: auto;
+}
+footer address {
+  font-family: Pavanam;
+  font-style: normal;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1rem;
+}
+footer a {
+  color: #fff9f1;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ffb000;
+  text-decoration: none;
+}
+
+.footeroverskrift {
+  font-weight: 700;
+  padding: 0;
+  font-family: Pavanam;
+  text-align: center;
+}
+.iconer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 200px;
+  margin-inline: auto;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding-bottom: 60px;
+}
+.instaikon:hover {
+  filter: sepia();
+}
+.facebookikon:hover {
+  filter: sepia();
+}
+
+/************ MENU **************/
+.burger {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+nav {
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ff7f00;
+  margin-bottom: 7px;
+  transition: 0.2s linear;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+  transition: 0.2s linear;
+  background-color: #37111f;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+  background-color: #37111f;
+}
+nav.active .menu {
+  display: block;
+  position: absolute;
+  top: 125px;
+  right: 0px;
+  width: 40%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background-color: #c4e6ff;
+  border-radius: 35px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav.active .menu li {
+  margin-left: 5%;
+  list-style: none;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+nav.active .menu a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #37111f;
+}
+
+.menu {
+  display: none;
+  font-family: Pavanam;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background-repeat: no-repeat;
+}
+header .logo {
+  display: flex;
+  height: 100%;
+  max-height: 150px;
+  min-height: 80px;
+  object-fit: contain;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 200px;
+}
+.menup:hover {
+  color: #ff7f00;
+}
+.menuo:hover {
+  color: #ff7f00;
+}
+/**************forside menu********************/
+.headerforside {
+  display: grid;
+  grid-template-columns: 2fr 1fr 5fr 1fr 2fr;
+  grid-template-rows: 1fr 4fr 2fr 8fr 1fr 2fr;
+  align-items: center;
+}
+
+.logoforside {
+  grid-column: 2/5;
+  grid-row: 4/5;
+  object-fit: contain;
+  padding-bottom: 20px;
+}
+.hover-knap-forsidev {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  background-color: #c4e6ff;
+  text-align: center;
+  text-decoration: none;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  box-shadow: 5px 5px 41px #e4ded7;
+  transition: background-color 0.2s ease-in-out;
+}
+.hover-knap-forsideh {
+  grid-column: 4/6;
+  grid-row: 2/3;
+  background-color: #c4e6ff;
+  text-align: center;
+  text-decoration: none;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  box-shadow: 5px 5px 41px #e4ded7;
+  transition: background-color 0.2s ease-in-out;
+}
+.hover-knap-forsideh:hover {
+  background-color: #ffb000;
+}
+.hover-knap-forsidev:hover {
+  background-color: #ffb000;
+}
+/********'*Rullende text på forside***/
+#rulletekstblok {
+  grid-column: 1/6;
+  grid-row: 6/7;
+  position: relative;
+  overflow: hidden;
+}
+
+.rulletekst12 {
+  margin: 0 auto;
+  font-family: Pavanam;
+  font-size: 2rem;
+  white-space: nowrap;
+  color: #37111f;
+}
+
+.rulletekst1 {
+  display: inline-block;
+  -webkit-animation: scrolling-left1 20s linear infinite;
+  animation: scrolling-left1 20s linear infinite;
+}
+
+.rulletekst2 {
+  display: inline-block;
+  -webkit-animation: scrolling-left2 20s linear infinite;
+  animation: scrolling-left2 20s linear infinite;
+  animation-delay: 10s;
+}
+.rulletekst3 {
+  display: none;
+}
+
+@keyframes scrolling-left1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scrolling-left2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/*********Kontakt på forside**********/
+.kontaktboks {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 2fr 1fr 5fr 1fr;
+  padding-top: 50px;
+}
+.kontakth1 {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  padding: 20px;
+  color: #ffe7c7;
+  background-color: #ff7f00;
+  border-radius: 35px;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+.kontaktform {
+  grid-column: 2/3;
+  grid-row: 2/4;
+}
+form {
+  background-color: #fff9f1;
+  grid-column: 2/3;
+  grid-row: 2/4;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 35px;
+  padding: 20px;
+  font-family: Pavanam;
+  font-weight: 600;
+  color: #37111f;
+  border: solid #ff7f00;
+}
+.form-felt {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* Ensartet bredde for alle undergrupper */
+  gap: 15px; /* Afstand mellem form-grupper */
+}
+label {
+  cursor: default;
+}
+label,
+select {
+  display: block;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.divinput {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+input {
+  display: block;
+  height: 2rem;
+  font-size: 15px;
+  width: 100%;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.kontaktboks h1 {
+  color: #fff9f1;
+  text-align: center;
+  font-family: "Red Hat Text";
+}
+.knapforside {
+  display: flex;
+  justify-content: center;
+}
+/*****************Portfolio forside****************/
+
+.T1k .th {
+  display: inline-block;
+  text-align: center;
+}
+.T2k .th {
+  display: inline-block;
+  text-align: center;
+}
+.T3k .th {
+  display: inline-block;
+  text-align: center;
+}
+.T4k .th {
+  display: inline-block;
+  text-align: center;
+}
+.T5k.th {
+  display: inline-block;
+  text-align: center;
+}
+
+.portforsidegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr 4fr 1fr;
+}
+.portforsidegrid a {
+  text-decoration: none;
+  text-align: center;
+}
+.portforsidegrid h1 {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Red Hat Text";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff7f00;
+}
+
+.T1k {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  background-color: #c4e6ff;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+
+.T2k {
+  grid-column: 2/6;
+  grid-row: 6/7;
+  background-color: #c4e6ff;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+
+.T3k {
+  grid-column: 1/5;
+  grid-row: 8/9;
+  background-color: #c4e6ff;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+
+.T4k {
+  grid-column: 1/4;
+  grid-row: 10/11;
+  background-color: #c4e6ff;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+
+.T5k {
+  grid-column: 3/6;
+  grid-row: 12/13;
+  background-color: #c4e6ff;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+
+.T6k {
+  grid-column: 1/5;
+  grid-row: 14/15;
+  background-color: #c4e6ff;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+/*************Temaer***********************/
+
+.temaintro {
+  padding-inline: 60px 60px;
+  font-family: Pavanam;
+  font-weight: 500;
+  color: #37111f;
+}
+.temaintro h1 {
+  font-family: "red hat text";
+  color: #ff7f00;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+.temaintro h2 {
+  font-family: "red hat text";
+  color: #ff7f00;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.temaknappercontainer {
+  padding-inline: 10% 10%;
+}
+.temaknapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+.temaløsning {
+  display: grid;
+  width: 80%;
+  margin-inline: auto;
+  gap: 20px;
+}
+.temaa h2 {
+  padding-top: 20px;
+  font-family: "Red Hat Text";
+  color: #ff7f00;
+  font-weight: 400;
+}
+.billederløsning {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.billederløsningb {
+  border: solid #ff7f00;
+  border-radius: 35px;
+}
+.temaproces {
+  display: grid;
+  width: 80%;
+  margin-inline: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.temaa p {
+  font-family: Pavanam;
+  font-weight: 500;
+  color: #37111f;
+}
+
+.temaa p {
+  font-family: Pavanam;
+  font-weight: 500;
+  color: #37111f;
+}
+.temaproces img {
+  border: solid #ff7f00;
+  border-radius: 20px;
+}
+.temakode {
+  display: grid;
+  width: 80%;
+  margin-inline: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.kodeb {
+  border: solid #ff7f00;
+  border-radius: 20px;
+}
+/***************øverst i tema*********************/
+.oversttema {
+  padding-inline: 10px 10px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.oversttema a {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 1rem;
+  padding: 5px 10px 5px 10px;
+}
+.oversttema a:hover {
+  background-color: #ff7f00;
+}
+#indeoverst {
+  font-weight: 900;
+  background-color: #fff9f1;
+  color: #ff7f00;
+  border: solid #ff7f00;
+}
+/***************Nederst i tema*********************/
+#indepåtema {
+  font-weight: 900;
+  background-color: #c4e6ff;
+  color: #37111f;
+  border: solid #ff7f00;
+}
+
+.nedersttema {
+  padding-inline: 60px 60px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.nedersttema h2 {
+  padding-bottom: 20px;
+  font-family: "red hat text";
+  color: #ff7f00;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+.nedersttema a {
+  background-color: #c4e6ff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 1.5rem;
+  padding: 10px 20px 10px 20px;
+}
+.nedersttema a:hover {
+  background-color: #ff7f00;
+}
+
+/*************Tema 1***********************/
+.tema1knapperintro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: 60px 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+.videot1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.løsningT1 {
+  padding-top: 20px;
+  padding-inline: 14% 14%;
+}
+.løsningT1 h2 {
+  padding-bottom: 20px;
+  font-family: "red hat text";
+  color: #ff7f00;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+iframe {
+  height: 192px;
+  width: 335px;
+  border: solid #ff7f00;
+  margin-bottom: 20px;
+}
+.procest1 {
+  padding-top: 20px;
+  padding-inline: 14% 14%;
+}
+.procest1 h2 {
+  font-family: "red hat text";
+  color: #ff7f00;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.procest1 p {
+  padding-bottom: 20px;
+  font-family: Pavanam;
+  font-weight: 600;
+  color: #37111f;
+  width: 610px;
+}
+.procest1 img {
+  margin-bottom: 20px;
+  border: solid#ff7f00;
+}
+
+/*************Tema 2***********************/
+.kodebilledert1 {
+  display: grid;
+  gap: 20px;
+}
+/*************Tema 3***********************/
+.tema3procesmogs {
+  display: grid;
+  gap: 20px;
+}
+.kodebilledert2 {
+  display: grid;
+  gap: 20px;
+}
+/*************Tema 4***********************/
+.tema4process {
+  display: grid;
+  gap: 20px;
+}
+.tema4papirprototype {
+  display: grid;
+  gap: 20px;
+}
+.kodebilledert4 {
+  display: grid;
+  gap: 20px;
+}
+/*************Tema 5***********************/
+.løsningt5 {
+  display: grid;
+  gap: 20px;
+  border: solid #ff7f00;
+  border-radius: 35px;
+  margin-bottom: 20px;
+}
+.løsningt5sprite {
+  display: grid;
+  gap: 20px;
+  width: 90%;
+  margin-inline: auto;
+}
+/*******Passionsite*******/
+.tema5p1 {
+  display: grid;
+  gap: 20px;
+  border: solid #ff7f00;
+  border-radius: 35px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.tema5p11 {
+  display: grid;
+  gap: 20px;
+  width: 90%;
+  margin-inline: auto;
+}
+.tema5p12 {
+  display: grid;
+  gap: 20px;
+  width: 90%;
+  margin-inline: auto;
+}
+/*******virksomhedssite*******/
+.tema5p2 {
+  display: grid;
+  gap: 20px;
+  border: solid #ff7f00;
+  border-radius: 35px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.tema5p22 {
+  display: grid;
+  gap: 20px;
+  width: 90%;
+  margin-inline: auto;
+}
+.tema5kode {
+  display: grid;
+  gap: 20px;
+  width: 90%;
+  margin-inline: auto;
+}
+/*************OM MIG************/
+.ommig h1 {
+  font-family: "red hat text";
+  color: #ff7f00;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+.ommigintro {
+  width: 90%;
+  margin-inline: auto;
+  border: solid #ff7f00;
+  border-radius: 35px;
+}
+.ommigintrosprite {
+  width: 80%;
+  margin-inline: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.ommig h2 {
+  font-family: "red hat text";
+  color: #ff7f00;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+.ommigintro p {
+  padding-bottom: 20px;
+  font-family: Pavanam;
+  font-weight: 600;
+  color: #37111f;
+}
+.ommigintro img {
+  border: solid #ff7f00;
+
+  border-radius: 35px;
+  max-height: 600px;
+}
+
+.ommigknappercontainer {
+  width: 80%;
+  text-align: center;
+  margin-inline: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ommigknapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.ommigknapper a {
+  font-size: 1.2rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#kompetencer {
+  text-align: center;
+  padding: 20px;
+}
+
+.kompetencerboxv {
+  grid-column: 1/3;
+  background-color: #c4e6ff;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 1rem;
+  padding: 10px;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+.kompetencerboxh {
+  grid-column: 2/4;
+  background-color: #c4e6ff;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  color: #37111f;
+  font-family: Pavanam;
+  font-size: 1rem;
+  padding: 20px;
+  box-shadow: 5px 5px 41px #e4ded7;
+}
+.kompetencerboxh h2 {
+  text-align: right;
+}
+.kompetencerboxh p {
+  text-align: right;
+}
+.kompetencerindhold {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 3fr 3fr 3fr 2fr 2fr 2fr 2fr;
+  row-gap: 2%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.Webudvikling {
+  grid-row: 1/2;
+}
+.designværktøjer {
+  grid-row: 2/3;
+}
+.projektstyring {
+  grid-row: 3/4;
+}
+.uiogux {
+  grid-row: 4/5;
+}
+.illustrationer {
+  grid-row: 5/6;
+}
+.visuelidentitet {
+  grid-row: 6/7;
+}
+.animeretindhold {
+  grid-row: 7/8;
+}
+
+/****************Galleri**********************/
+#galleri {
+  width: 80%;
+  margin-inline: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+.textgalleri {
+  margin-inline: auto;
+  width: 70%;
+  font-family: Pavanam;
+  color: #37111f;
+  padding-bottom: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 10px;
+  border: solid#ff7f00;
+  background-color: #ff7f00;
+  border-radius: 35px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  margin-inline: auto;
+  width: 20%;
+  padding: 16px;
+  color: #ffe7c7;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.fremogtilbage {
+  width: 50%;
+  margin-inline: auto;
+  text-align: center;
+}
+.prev:hover,
+.next:hover {
+  color: #ffe7c7;
+  font-size: 70px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #ff7f00;
+  padding: 2px 16px;
+  color: white;
+  font-family: Pavanam;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/**************Kontakt om mig***************/
+.kontaktboksommig {
+  margin-top: 30px;
+  width: 75%;
+  margin-inline: auto;
+  background-color: #ff7f00;
+  border-radius: 35px;
+  margin-bottom: 30px;
+}
+
+.kontaktboksommig h2 {
+  color: white;
+  padding: 20px;
+  font-family: "Red Hat text";
+  text-align: center;
+  font-weight: 600;
+}
+.tilbagetiltop {
+  margin-inline: auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
