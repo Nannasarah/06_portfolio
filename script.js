@@ -14,38 +14,37 @@ function menuClick() {
   nav.classList.remove("active");
 }
 
-/**************Slideshow på om mig***********/
+/**************Slideshow på om mig-siden***********/
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// næste og tilbage
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
 function showSlides(n) {
-  let i;
+  // viser slideshow
   let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
+  // viser billede
+  let visbillede = document.getElementsByClassName("imgmtekst");
+  // viser billedbeskrivelsen
   let captionText = document.getElementById("caption");
+
+  // gør at slideshowetsbilleder gører i ring - hvis man foran
   if (n > slides.length) {
     slideIndex = 1;
   }
+  // gør at slideshowetsbilleder gører i ring - hvis man gårbagud
   if (n < 1) {
     slideIndex = slides.length;
   }
+  // viser et billede ad gangen og gemmer de andre billeder
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  //viser billedet
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
+  // viser caption til billederne
+  captionText.innerHTML = visbillede[slideIndex - 1].alt;
 }

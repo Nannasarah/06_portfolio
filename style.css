@@ -969,7 +969,7 @@ iframe {
   box-sizing: border-box;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
+/**********container for frem og tilbage knapper på galleri**********/
 .container {
   position: relative;
   width: 80%;
@@ -982,19 +982,9 @@ iframe {
   margin-bottom: 30px;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
+/***************næste og tilbage knap*****************/
+.tilbage,
+.naeste {
   cursor: pointer;
   margin-inline: auto;
   width: 20%;
@@ -1004,24 +994,23 @@ iframe {
   font-size: 50px;
 }
 
-/* Position the "next button" to the right */
-.next {
+/* Position næsteknal */
+.naeste {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .fremogtilbage {
   width: 50%;
   margin-inline: auto;
   text-align: center;
 }
-.prev:hover,
-.next:hover {
+.tilbage:hover,
+.naeste:hover {
   color: #ffe7c7;
   font-size: 70px;
 }
 
-/* Number text (1/3 etc) */
+/**********billedetal************/
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -1030,7 +1019,7 @@ iframe {
   top: 0;
 }
 
-/* Container for image text */
+/**********Billedebeskrivelse**********/
 .caption-container {
   text-align: center;
   background-color: #ff7f00;
@@ -1041,27 +1030,6 @@ iframe {
   font-weight: 100;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
 /**************Kontakt om mig***************/
 .kontaktboksommig {
   margin-top: 30px;
