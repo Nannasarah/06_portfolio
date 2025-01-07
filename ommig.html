@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <title>Om mig</title>
     <link rel="icon" sizes="any" href="img/logo/nsp-favicon.svg">
     <link rel="stylesheet" href="style.css">
@@ -62,7 +63,7 @@
             <div class="ommigknapper">
                 <a class="knap" href="#kompetencer">Kompetencer</a>
                 <a class="knap" href="#galleri">Galleri</a>
-                <a class="knap" href="#kontaktommig">Kontakt mig</a>
+                <a class="knap" href="#kontaktommig">Kontakt</a>
             </div>
         </div>
         <div class="blålinje"></div>
@@ -74,16 +75,16 @@
             </div>
             <div class="designværktøjer kompetencerboxh">
                 <h2>Brug af designværktøjer</h2>
-                <p>Adobe illustrator til illustrationer og vektor grafik <br>
-                    Adobe after effects til animeret vektorgrafik <br>
-                    Adobe Premiere Pro til video <br>
-                    Adobe Audition til lyd <br>
-                    Figma til process og idegenerering</p>
+                <p>Adobe illustrator til illustrationer og vektor grafik - <br>
+                    Adobe after effects til animeret vektorgrafik - <br>
+                    Adobe Premiere Pro til video - <br>
+                    Adobe Audition til lyd - <br>
+                    Figma til process og idegenerering - </p>
             </div>
             <div class="projektstyring kompetencerboxv">
                 <h2>Projektstyring</h2>
                 <p>Ved hjælp af Figma, FigJam og Trello sikrer jeg en velorganiseret projektstyring, hvor hver
-                    designbeslutning er grundigt
+                    designbeslutning <br> er grundigt
                     dokumenteret og velbegrundet.</p>
             </div>
             <div class="uiogux kompetencerboxh">
@@ -117,52 +118,57 @@
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <!-- container med billedebeskrivelse -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
 
             <!-- Full-width images with number text -->
             <div class="mySlides">
-                <div class="numbertext">1 / 8</div>
+                <div class="numbertext">1 / 9</div>
                 <img src="img/galleri/easytiger.webp" style="width:100%" onclick="currentSlide(1)"
                     alt="Plakat: Easy Tiger">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">2 / 8</div>
+                <div class="numbertext">2 / 9</div>
                 <img src="img/galleri/CAMPCRAZYFROG.webp" style="width:100%" alt="camp crazyfrog">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">3 / 8</div>
+                <div class="numbertext">3 / 9</div>
                 <img src="img/galleri/gloktepustegning.webp" style="width:100%" alt="blæksprutte med pistol">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">4 / 8</div>
+                <div class="numbertext">4 / 9</div>
                 <img src="img/galleri/oliverdaab.webp" style="width:100%" alt="oliverdåb">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">5 / 8</div>
+                <div class="numbertext">5 / 9</div>
                 <img src="img/galleri/hbisbag.webp" style="width:100%"
                     alt="hellere boller i suppen end suppe på bollerne">
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">6 / 8</div>
+                <div class="numbertext">6 / 9</div>
                 <img src="img/galleri/kulibri.webp" style="width:100%" alt="kulibri">
             </div>
             <div class="mySlides">
-                <div class="numbertext">7 / 8</div>
+                <div class="numbertext">7 / 9</div>
                 <img src="img/galleri/naarkattenerude.webp" style="width:100%" alt="når katten er ude">
             </div>
             <div class="mySlides">
-                <div class="numbertext">8 / 8</div>
-                <img src="img/galleri/furesoenavnelogo.webp" style="width:100%" alt="hej">
+                <div class="numbertext">8 / 9</div>
+                <img src="img/galleri/furesoenavnelogo.webp" style="width:100%" alt="furesoenavnelogo">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="img/galleri/plakat-julle.webp" style="width:100%" alt="plakat til julle">
             </div>
 
-            <!-- container med billedebeskrivelse -->
-            <div class="caption-container">
-                <p id="caption"></p>
-            </div>
+
 
             <!-- Thumbnail images -->
             <div class="row">
@@ -180,7 +186,8 @@
                 </div>
                 <div class=" column">
                     <img class="demo cursor" src="img/galleri/oliverdaab.webp" style="display:none"
-                        onclick="currentSlide(4)" alt="Plakat">
+                        onclick="currentSlide(4)" alt="Børneplakat med fødselsdato på">
+
                 </div>
                 <div class="column">
                     <img class="demo cursor" src="img/galleri/hbisbag.webp" style="display:none"
@@ -197,6 +204,10 @@
                 <div class="column">
                     <img class="demo cursor" src="img/galleri/furesoenavnelogo.webp" style="display:none"
                         onclick="currentSlide(6)" alt="Logo for Furesø kommune familiehus">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/galleri/plakat-julle.webp" style="display:none"
+                        onclick="currentSlide(6)" alt="Læringsplakat om smerte">
                 </div>
             </div>
         </div>
